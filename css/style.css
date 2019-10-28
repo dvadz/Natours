@@ -146,6 +146,8 @@ and then the animation is applied to the .logo
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
   border-radius: 100px;
   transition: all 0.2s;
 }
@@ -163,6 +165,4 @@ and then the animation is applied to the .logo
 .btn-white {
   background-color: #fff;
   color: #777;
-  padding: 15px 40px;
-  display: inline-block;
 }
