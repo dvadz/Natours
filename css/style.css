@@ -53,6 +53,11 @@ body {
 .heading-primary {
   color: #ffffff;
   text-transform: uppercase;
+
+  /* prevent shifting up by a few pixels at the end of the 
+  .heading-primary-main and .heading-primary-sub animations
+  it doesn't happen though on my version of chrome */
+  backface-visibility: hidden;
 }
 
 .heading-primary-main {
