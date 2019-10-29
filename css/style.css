@@ -132,6 +132,18 @@ and then the animation is applied to the .logo
   }
 }
 
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes Spin {
   /* 50% {
     transform: rotate(180deg);
@@ -188,4 +200,9 @@ and then the animation is applied to the .logo
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
+}
+
+.btn-animated {
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
 }
