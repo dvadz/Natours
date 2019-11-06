@@ -42,13 +42,13 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
-.logo-box {
+.header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
 
-.logo {
+.header__logo {
   height: 3.5rem;
 }
 
@@ -60,11 +60,12 @@ and then the animation is applied to the .logo
   animation: moveInRight 2s ease-out;
 } */
 
-.logo:hover {
+.header__logo:hover {
   animation: Spin 0.5s ease-out;
+  color: red;
 }
 
-.text-box {
+.header__text-box {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -83,7 +84,7 @@ and then the animation is applied to the .logo
   margin-bottom: 6rem;
 }
 
-.heading-primary-main {
+.heading-primary__main {
   display: block;
   font-size: 6rem;
   font-weight: 400;
@@ -97,7 +98,7 @@ and then the animation is applied to the .logo
   animation-iteration-count: 3; */
 }
 
-.heading-primary-sub {
+.heading-primary__sub {
   display: block;
   font-size: 2rem;
   font-weight: 700;
@@ -185,7 +186,7 @@ and then the animation is applied to the .logo
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
-.btn-white {
+.btn--white {
   background-color: #fff;
   color: #777;
 }
@@ -203,7 +204,7 @@ and then the animation is applied to the .logo
   transition: all 0.4s;
 }
 
-.btn-white::after {
+.btn--white::after {
   background-color: #fff;
 }
 
@@ -212,7 +213,7 @@ and then the animation is applied to the .logo
   opacity: 0;
 }
 
-.btn-animated {
+.btn--animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
 }
