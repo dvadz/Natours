@@ -6,7 +6,6 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
-
 /* also need to target all pseudo elements */
 *,
 *::after,
@@ -27,7 +26,6 @@ body {
   line-height: 1.7;
   color: #777;
   padding: 3rem;
-
   box-sizing: border-box;
 }
 
@@ -38,7 +36,6 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
-
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
@@ -59,7 +56,6 @@ and then the animation is applied to the .logo
 .logo-box:hover .logo {
   animation: moveInRight 2s ease-out;
 } */
-
 .header__logo:hover {
   animation: Spin 0.5s ease-out;
   color: red;
@@ -76,7 +72,6 @@ and then the animation is applied to the .logo
 .heading-primary {
   color: #ffffff;
   text-transform: uppercase;
-
   /* prevent shifting up by a few pixels at the end of the 
   .heading-primary-main and .heading-primary-sub animations
   it doesn't happen though on my version of chrome */
@@ -89,7 +84,6 @@ and then the animation is applied to the .logo
   font-size: 6rem;
   font-weight: 400;
   letter-spacing: 3.5rem;
-
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
@@ -103,7 +97,6 @@ and then the animation is applied to the .logo
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1.75rem;
-
   animation: moveInRight 1s ease-out;
   /* expanded form:
   animation-name: moveInRight;
@@ -117,7 +110,6 @@ and then the animation is applied to the .logo
     opacity: 0;
     transform: translate(-10rem);
   }
-
   80% {
     transform: translate(1rem);
   }
@@ -132,7 +124,6 @@ and then the animation is applied to the .logo
     opacity: 0;
     transform: translate(10rem);
   }
-
   80% {
     transform: translate(-1rem);
   }
@@ -147,7 +138,6 @@ and then the animation is applied to the .logo
     opacity: 0;
     transform: translateY(3rem);
   }
-
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -158,7 +148,6 @@ and then the animation is applied to the .logo
   /* 50% {
     transform: rotate(180deg);
   } */
-
   100% {
     transform: rotate(360deg);
   }
