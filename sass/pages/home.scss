@@ -13,4 +13,11 @@
     ),
     url(../img/nat-4.jpg);
   background-size: cover;
+  margin-top: -10rem;
+
+  transform: skewY(-6.5deg);
+
+  & > * {
+    transform: skewY(6.5deg);
+  }
 }
