@@ -189,8 +189,6 @@ body {
   position: relative;
   height: 50rem; }
   .card__side {
-    color: white;
-    font-size: 2rem;
     height: 50rem;
     transition: all 0.8s ease;
     position: absolute;
@@ -223,6 +221,15 @@ body {
       background-image: url(../img/nat-5.jpg); }
     .card__picture--3 {
       background-image: url(../img/nat-5.jpg); }
+  .card__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    position: absolute;
+    top: 12rem;
+    right: 2rem; }
 
 .composition {
   position: relative; }
