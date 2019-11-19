@@ -471,6 +471,9 @@ body {
     filter: blur(3px) brightness(80%);
     backface-visibility: hidden; }
 
+.footer {
+  background-color: #333; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
