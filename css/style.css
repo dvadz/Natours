@@ -569,7 +569,8 @@ body {
   top: 6rem;
   right: 6rem;
   z-index: 200;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  text-align: center; }
 
 .navigation__background {
   height: 6rem;
@@ -633,7 +634,8 @@ body {
   width: 100%; }
 
 .navigation__icon {
-  position: relative; }
+  position: relative;
+  margin-top: 3.5rem; }
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
     width: 3rem;
     height: 2px;
