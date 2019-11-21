@@ -570,7 +570,8 @@ body {
   right: 6rem;
   z-index: 200;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
-  text-align: center; }
+  text-align: center;
+  cursor: pointer; }
 
 .navigation__background {
   height: 6rem;
@@ -640,16 +641,23 @@ body {
     width: 3rem;
     height: 2px;
     background-color: #777;
-    display: inline-block; }
+    display: inline-block;
+    transition: all 0.2s; }
   .navigation__icon::before, .navigation__icon::after {
     content: "";
     position: absolute; }
   .navigation__icon::before {
     left: 0;
-    top: -1rem; }
+    top: -0.8rem; }
   .navigation__icon::after {
     left: 0;
-    top: 1rem; }
+    top: 0.8rem; }
+
+.navigation__button:hover .navigation__icon::before {
+  top: -1rem; }
+
+.navigation__button:hover .navigation__icon::after {
+  top: 1rem; }
 
 .section-about {
   background-color: #f7f7f7;

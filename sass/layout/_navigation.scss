@@ -14,6 +14,7 @@
     z-index: 200;
     box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
     text-align: center;
+    cursor: pointer;
   }
 
   &__background {
@@ -105,6 +106,7 @@
       height: 2px;
       background-color: $color-grey-dark;
       display: inline-block;
+      transition: all 0.2s;
     }
 
     &::before,
@@ -115,12 +117,20 @@
 
     &::before {
       left: 0;
-      top: -1rem;
+      top: -0.8rem;
     }
 
     &::after {
       left: 0;
-      top: 1rem;
+      top: 0.8rem;
     }
+  }
+
+  &__button:hover &__icon::before {
+    top: -1rem;
+  }
+
+  &__button:hover &__icon::after {
+    top: 1rem;
   }
 }
