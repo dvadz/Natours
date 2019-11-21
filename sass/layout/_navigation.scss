@@ -1,15 +1,6 @@
 .navigation {
   &__checkbox {
     display: none;
-
-    &:checked ~ .navigation__background {
-      transform: scale(50);
-    }
-
-    &:checked ~ .navigation__nav {
-      opacity: 1;
-      width: 100%;
-    }
   }
 
   &__button {
@@ -89,5 +80,15 @@
       display: inline-block;
       margin-right: 1.5rem;
     }
+  }
+
+  // FUNCTIONALITY
+  &__checkbox:checked ~ &__background {
+    transform: scale(50);
+  }
+
+  &__checkbox:checked ~ &__nav {
+    opacity: 1;
+    width: 100%;
   }
 }
