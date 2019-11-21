@@ -632,6 +632,23 @@ body {
   opacity: 1;
   width: 100%; }
 
+.navigation__icon {
+  position: relative; }
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: #777;
+    display: inline-block; }
+  .navigation__icon::before, .navigation__icon::after {
+    content: "";
+    position: absolute; }
+  .navigation__icon::before {
+    left: 0;
+    top: -1rem; }
+  .navigation__icon::after {
+    left: 0;
+    top: 1rem; }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
