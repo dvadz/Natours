@@ -432,7 +432,12 @@ body {
   z-index: 1000;
   position: fixed;
   top: 0;
-  left: 0; }
+  left: 0;
+  opacity: 0;
+  visibility: hidden; }
+  .popup:target {
+    opacity: 1;
+    visibility: visible; }
   .popup__content {
     position: absolute;
     top: 50%;
