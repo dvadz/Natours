@@ -8,7 +8,23 @@
 
 html {
   // this defines what 1rem is
-  font-size: 62.5%;
+  font-size: 62.5%; // set 1rem to 10px, 10/16 = 62.5%
+
+  // "phone" doesn't need to be defined
+  //  @include respond(tab-port) { }
+
+  // Width less than 1200px
+  @include respond(tab-land) {
+    font-size: 56.25%; //set 1 rem to 9px, 9/16 = 56.25%
+  }
+  // Width less than 900px
+  @include respond(tab-port) {
+    font-size: 50%; //set 1 rem to 8px, 8/16 = 50%
+  }
+  // Width greater than 1800px
+  @include respond(big-desktop) {
+    font-size: 75%; //set 1 rem to 12px, 12/16 = 75%
+  }
 }
 
 body {
