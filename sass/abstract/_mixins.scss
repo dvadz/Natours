@@ -12,3 +12,51 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+// MEDIA QUERY MANAGER
+/*
+   0px -  600px  Phone
+ 600px -  900px  Tablet portrait
+ 900px - 1200px  Tablet landscape
+[1200px - 1800px] this is where our normal styles apply
+1801px +         Big desktop
+
+$breakpoint argument values
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: base = typography > general layout + grid > page layout > components
+
+browser default: 1em = 16px
+max-width and min-width are expressed in 'em'
+so divide the 
+*/
+
+@mixin respond($breakpoint) {
+  // MAX 600px
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+  // MAX 900px
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+  // MAX 1200px
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+  // MIN 1800px +
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}
