@@ -13,7 +13,11 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
-  @media (min-resolution: 192dpi) and (min-width: 600px) {
+  // use high-resolution hero image for the 2 conditions
+  // 1. screen is high resolution(mind-resolution:192dpi) && viewport is at least 600px wide
+  // 2. on a regular screen, when the viewport is at least 2000px wide
+  // min-widths are expressed in em, 1em = 16px
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
     background-image: linear-gradient(
         to right,
         rgba($color-secondary-light, 0.8),
