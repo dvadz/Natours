@@ -17,7 +17,9 @@
   // 1. screen is high resolution(mind-resolution:192dpi) && viewport is at least 600px wide
   // 2. on a regular screen, when the viewport is at least 2000px wide
   // min-widths are expressed in em, 1em = 16px
-  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  @media (min-resolution: 192dpi) and (min-width: 37.5em),
+    (min-width: 125em),
+    (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em) {
     background-image: linear-gradient(
         to right,
         rgba($color-primary-light, 0.8),
